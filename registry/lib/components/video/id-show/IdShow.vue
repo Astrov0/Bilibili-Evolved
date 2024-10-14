@@ -9,7 +9,7 @@
     <div v-if="aid" class="id-show-item">
       CID: {{ cid }}
       <div class="id-show-item-copy" title="复制" @click="copyLink('cid', cid)">
-        <VIcon :size="16" :icon="aidCopied ? 'mdi-check' : 'mdi-link'" />
+        <VIcon :size="16" :icon="cidCopied ? 'mdi-check' : 'mdi-link'" />
       </div>
     </div>
     <div v-if="bvid" class="id-show-item">
