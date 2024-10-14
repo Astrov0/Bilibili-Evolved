@@ -6,19 +6,14 @@ import {
 import { hasVideo } from '@/core/spin-query'
 import { videoAndBangumiUrls } from '@/core/utils/urls'
 
-const options = defineOptionsMetadata({
-  copyWithTitle: {
-    defaultValue: false,
-    displayName: '复制链接时带上标题',
-  },
-})
+const options = defineOptionsMetadata({})
 export const component = defineComponentMetadata({
-  name: 'bvidConvert',
-  displayName: 'BV 号转换',
+  name: 'idShow',
+  displayName: 'ID显示',
   options,
   entry: none,
   description: {
-    'zh-CN': '在功能面板中显示视频的 AV 号和 BV 号.',
+    'zh-CN': '在功能面板中显示视频的AV、BV、CID号.',
   },
   tags: [componentsTags.video, componentsTags.utils],
   widget: {
